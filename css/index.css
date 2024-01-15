@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap');
+
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+}
+.Header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.logo{
+    padding: 10px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(16, 211, 195, 0.863) 0%,
+        rgba(0,50,100,50) 100%
+    );
+    border-radius: 10px;
+
+}
+
+.logo:hover{
+    color:rgba(1, 1, 1, 0.4);
+}
+
+.navegacion ul{
+    list-style: none;
+    font-size: 30px;
+}
+
+.Header .navegacion ul li{
+    float: left;
+    position: relative;
+}
+
+.Header .navegacion ul li a{
+    font-size: 23px;
+    color: wheat;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.Header .navegacion ul li a:hover {
+    background-color:gray;
+}
+
+.Header .navegacion ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color:black;
+    display: none;
+
+}
+
+.Header .navegacion ul li ul a {
+    padding: 15px;
+    color: white;
+}
+
+.Header .navegacion ul li ul li{
+    width: 100%;
+}
+
+.Header .navegacion ul li:hover > ul {
+    display: initial;
+}
+
+#toggle,
+.Header label{
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    width: 45px;
+    height: 35px;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background-image: url(img/img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*APLICAR ESTILOS AL 1 SECTION (About)*/
+
+.about {
+    padding: 100px 0;
+    background-color: #24272E;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    flex-basis: 50%;
+    padding: 35px;
+}
+
+span{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #F56349;
+}
+
+h2{
+    font-size: 40px;
+    color: white;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+p{
+    color:cyan;
+}
+hr{
+    border: 1px solid #F56349;
+    width: 10%;
+    margin-bottom: 30px;
+}
+
+.about-img{
+    flex-basis: 50%;
+}
+
+.about-img img {
+    border-radius: 15px;
+}
+
+
+/*APLICAR ESTILOS AL SECTION (INFORMACION)*/
+
+.Informacion{
+    background-color: #191A1F;
+}
+
+.Informacion-content{
+    display: flex;
+}
+
+.Informacion-txt{
+    flex-basis: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+}
+
+.btn-1{
+    padding: 8px ;
+    font-size: 20px;
+    color: white;
+    margin: 25px 0 35px 0 ;
+    text-decoration: none;
+    background: linear-gradient(
+        90deg,
+        rgb(13, 135, 165) 0%,
+        rgba(0,50,100,50) 100%
+    );
+    border-radius: 10px;
+}
+
+
+
+.Informacion-img {
+    flex-basis: 50%;
+    
+}
+
+.Informacion-img img{
+     height: 100%;
+     border: 1px solid #51515179;
+     border-radius: 10%;
+}
+
+
+/*APLICAR ESTILOS AL SECTION (BLOG)*/
+
+.Blog {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #24272E;
+}
+
+.Blog-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.blog-1{
+    flex-basis: calc(33.3% - 25px);
+    background-color: #191A1F;
+}
+
+.blog-1 img {
+    margin-bottom: 15px ;
+}
+
+.blog-txt{
+    padding: 20px;
+}
+
+.blog-txt h3{
+    color: white;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/*APLICAR ESTILOS AL SECTION (CONTACTO)*/
+
+.contacto{
+    padding: 100px 0;
+    background-color: #191A1F;
+}
+
+.contacto-content {
+    text-align: center;
+}
+
+
+
+/*APLICAR ESTILOS AL FOOTER (FOOTER)*/
+
+.footer{
+    padding: 100px 0;
+    background-color: #24272E;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    padding: 10px ;
+    font-size: 17px;
+    color: white;
+    margin: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        rgba(0,99,72,1) 0%,
+        rgba(0,140,32,0) 100%
+    );
+    border-radius: 10px;
+}
+
+
+
+.link a{
+    font-size: 17px;
+    color: #D4D4D4;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.footer .footer-content .link ul li {
+    list-style: none;
+}
+
+.link a:hover{
+    color: #F56349;
+
+}
+
+
+
+
+/*RESPONSI*/
+
+@media(max-width:950px) {
+    .Header label {
+        display: initial;
+    }
+
+    .Header {
+        padding: 20px 10%;
+    }
+
+    .Header .navegacion {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgba(1, 1, 1, 0.8);
+        display: none;
+    }
+
+    .Header .navegacion ul li a {
+
+        color: white;
+    }
+
+    .Header .navegacion ul li {
+        width: 100%;
+        
+    }
+
+    .Header .navegacion ul li a {
+        padding: 8px 30px  8px 10%;
+    }
+
+    .Header .navegacion ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .Header .navegacion ul li ul li {
+        background-color:rgba(1, 1, 1, 0.7);
+    }
+
+    .Header .navegacion ul li ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+
+    #toggle:checked ~ .navegacion {
+        display: block;
+    }
+
+
+    /*SELECTION (ABOUT)*/
+
+    .about{
+        padding: 30px;
+    }
+
+    .about-content{
+        flex-direction: column;
+    }
+
+    /*SELECTION (BLOG)*/
+
+    .Blog{
+        padding: 30px;
+    }
+
+    .Blog-content{
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        margin-bottom: 30px;
+    }
+
+    /*SELECTION (INFORMACION)*/
+
+    .Informacion {
+        padding: 30px;
+    }
+
+    .Informacion-content{
+        flex-direction: column;
+    }
+
+    .Informacion-txt{
+        order: -2;
+        padding: 0;
+        margin: 30px 0;
+    }
+
+
+    /*SELECTION (CONTACT)*/
+
+    .contacto{
+        padding: 100px 30px;
+    }
+
+    /*FOOTER (FOOTER)*/
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
