@@ -129,126 +129,16 @@ body{
     height: 35px;
 }
 
-/*CARRUSEL*/
-
-h4, h2,small,a{
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-}
-.Carousel{
-    width: 100%;
-    margin: 0px 60px;
-    background-color: lightpink;
-}
-.Carousel h2{
-    font-size: 26px;
-    line-height: 38px;
-    padding-bottom: 24px;
-    opacity: .9;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    text-align: center;
-}
-
-/* images */
-
-.slick-list{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    height: 304px;
-    padding: 10px 0px;
-    margin: 0px auto;
-    max-width: 90vw;
-    overflow: hidden;
-}
-.slick-track{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    transition: .5s ease-in-out;
-}
-.slick{
-    position: relative;
-    width: 275px;
-    padding: 0 18px;
-    float: left;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
-}
-.slick h4{
-    position: absolute;
-    z-index: 1;
-    font-size: 22px;
-    line-height: 23px;
-    color: black;
-    padding: 15px;
-}
-.slick h4 small{
-    font-size: 15px;
-    display: block;
-}
-.slick a img{
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
-    transition: .3s ease-in-out;
-}
-.slick a img:hover{
-    opacity: .55;
-}
-
-/* buttons */
-
-.slick-arrow{
-    border-radius: 30px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 4;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-    border: 0;
-    cursor: pointer;
-}
-.slick-arrow:focus{
-    outline: 0;
-}
-.slick-arrow svg{
-    width: 12px;
-    height: 100%;
-    color: rgba(0,0,0,.7);
-}
-.slick-prev{
-    left: 0px;
-}
-.slick-next{
-    right: 0px;
-}
-
 /*SECTION*/
 
 .section {
-    
-    margin-top: 150%;
-    margin-left: 20px; 
-    background-color: black;
+     border: 1px solid;
 }
 
 .section-content{
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 200px;
 }
 
 .section-content img{
@@ -259,7 +149,84 @@ a{
 }
 
 .section-content img:hover{
-    width: 300px;
+    width: 50px;
     opacity: 1;
     filter: contrast(120%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSI*/
+
+@media (max-width:950px) {
+    
+    .Header label {
+        display: initial;
+    }
+
+    .Header {
+        padding: 20px 10%;
+    }
+
+    .Header .navegacion {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgba(1, 1, 1, 0.8);
+        display: none;
+    }
+
+    .Header .navegacion ul li a {
+
+        color: white;
+    }
+
+    .Header .navegacion ul li {
+        width: 100%;
+        
+    }
+
+    .Header .navegacion ul li a {
+        padding: 8px 30px  8px 10%;
+    }
+
+    .Header .navegacion ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .Header .navegacion ul li ul li {
+        background-color:rgba(1, 1, 1, 0.7);
+    }
+
+    .Header .navegacion ul li ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+
+    #toggle:checked ~ .navegacion {
+        display: block;
+    }
+
 }

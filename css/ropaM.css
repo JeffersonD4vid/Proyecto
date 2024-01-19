@@ -129,7 +129,7 @@ body{
     height: 70px;
     margin-top: 65px;
     padding: 0px 20px;
-    background: #fff;
+
     border-radius: 13px;
 }
 
@@ -173,18 +173,65 @@ body{
 }
 
 
+/*CARRUSEL DE IMAGENES*/
+.section {
+    margin-top: 30px;
+    margin-left: 26%;
+    margin-bottom: 30px;
+}
+
+.section-content{
+    display: flex;
+    width: 670px;
+    height: 300px;
+    box-shadow: 0px 0px 10px 0 black;
+    border-radius:  15px;
+}
+
+.section-content img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.img1{
+    border-radius: 15px 0 0 15px;
+}
+
+.img2{
+    border-radius: 0 15px 15px 0;
+}
+
+.section-content img:hover{
+    width: 170px;
+    opacity: 1;
+    filter: contrast(120%);
+    box-shadow: 0px 0px 10px 0 white;
+    border-radius: 0px;
+}
+
+
+
+
+
 /*APLICACION DE ESTILOS AL SECTION*/
 
 .titulo{
     font-size: 25px;
     text-transform: uppercase;
     color: #F56349;
+    transition: .1s ease;
+}
+
+.titulo:hover{
+    color: #09f;
+    box-shadow: #24272E;
 }
 
 .Blog {
     margin-top: 100px 0;
     text-align: center;
-    background: #191A1F;
 }
 
 .Blog-content {
@@ -212,7 +259,8 @@ body{
 .blog-1 img {
     margin-bottom: 15px ;
     border-radius: 15px;
-    transition: all 700ms ease;
+    transition: all 600ms ease;
+    box-shadow: 0px 0px 10px 0px lightskyblue;
 }
 
 .blog-1 img:hover{
@@ -341,6 +389,33 @@ body{
         display: block;
     }
 
+    /*NAV DE OPCIONES*/
+    .nav{
+        margin-top: 100px;
+        margin-bottom: 260px;
+    }
+
+    .contenedor-nav ul{
+        
+        flex-direction: column;
+    }
+
+ 
+
+
+    /*CARRUSEL*/
+    .section{
+        padding: 30px;
+        display: flex;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .section-content{
+        height: 200px;
+    }
 
 
     /*SECCION ROPA*/
