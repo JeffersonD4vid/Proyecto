@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap');
+
+/*font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+*{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    
+}
+
+    
+
+.Header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.logo{
+    padding: 10px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(16, 211, 195, 0.863) 0%,
+        rgba(0,50,100,50) 100%
+    );
+    border-radius: 10px;
+
+}
+
+.logo:hover{
+    color:rgba(1, 1, 1, 0.4);
+}
+
+.navegacion ul{
+    list-style: none;
+    font-size: 30px;
+}
+
+.Header .navegacion ul li{
+    float: left;
+    position: relative;
+}
+
+.Header .navegacion ul li a{
+    font-size: 23px;
+    color: wheat;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .1s ease;
+}
+
+.Header .navegacion ul li a:hover {
+    background-color:gray;
+}
+
+.Header .navegacion ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color:black;
+    display: none;
+
+}
+
+.Header .navegacion ul li ul a {
+    padding: 15px;
+    color: white;
+}
+
+.Header .navegacion ul li ul li{
+    width: 100%;
+}
+
+.Header .navegacion ul li:hover > ul {
+    display: initial;
+}
+
+#toggle,
+.Header label{
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    width: 45px;
+    height: 35px;
+}
+
+/*CARRUSEL*/
+
+h4, h2,small,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.Carousel{
+    width: 100%;
+    margin: 0px 60px;
+    background-color: lightpink;
+}
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* images */
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: black;
+    padding: 15px;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .55;
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+/*SECTION*/
+
+.section {
+    
+    margin-top: 150%;
+    margin-left: 20px; 
+    background-color: black;
+}
+
+.section-content{
+    display: flex;
+    width: 400px;
+    height: 400px;
+}
+
+.section-content img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.section-content img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
